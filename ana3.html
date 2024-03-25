@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>    
+    <title>Wang Sikai@PKU</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="load.css">
+    <link rel="stylesheet" href="global.css">
+</head>
+<body>
+    <div id="header">
+        <DIV id=mw-page-base class=noprint></DIV>
+        <DIV id=mw-head-base class=noprint></DIV>
+        <div id="content" class="mw-body" role="main">
+            <div id="main">
+                <h2>模拟电路实验（三） 认识集成电路并使用运算放大器</h2>
+                <h3>实验目的</h3>
+                <ol>
+                    <li>了解运算放大器的作用和原理；</li>
+                    <li>利用AD 623运算放大器模块处理简易传声器输出的信号；</li>
+                </ol>
+                <h3>预习材料</h3>
+                <ol>
+                    <li>集成电路及其定义和分类：<a href="https://baike.baidu.com/item/%E9%9B%86%E6%88%90%E7%94%B5%E8%B7%AF/108211">集成电路（微型电子器件或部件）_百度百科 (baidu.com)</a></li>
+                    <li>AD 623运算放大器的技术文档：<a href="https://www.analog.com/media/en/technical-documentation/data-sheets/ad623.pdf">AD623. Data Sheet</a></li>
+                </ol>
+                <h3>实验器材</h3>
+                面包板1个，示波器1台，万用表1个，传声器1个，USB线缆 1 条，USB母口1个，AD 623运算放大器1个，3.5 mm传声器线缆1条，3.5 mm传声器母口1个，实验用台式电脑1台，杜邦线若干，多种规格的电阻若干，多种规格的电容若干，电脑1台（需自行准备）。
+                <h3>实验步骤</h3>
+                <ol>
+                    <li>阅读AD 623运算放大器的技术文档，掌握放大器所有引脚的定义及功能；<br>
+                        <figure>
+                            <img src="ana3_1.png" class="fans" width="500">
+                            <figcaption>AD 623运算放大器引脚定义图</figcaption>
+                        </figure>
+                    </li>
+                    <li>参考“模拟电路实验（一）：示波器的使用与简易传声器电路”，在面包板上搭建简易传声器电路；</li>
+                    <li>参考AD 623运算放大器的技术文档，将简易传声器器电路的测量点接入运算放大器，并配置合适的增益电阻、电源电压和参考电平，对简易传声器电路输出的信号进行放大；<br>
+                        <figure>
+                            <img src="ana3_2.png" class="fans" width="1000">
+                            <figcaption>AD 623运算放大器引脚功能描述</figcaption>
+                        </figure>
+                    </li>
+                    <li>借助手机APP生成单频声，将手机扬声器开孔靠近传声器元件，然后使用示波器测试放大器输出引脚的对地（或其他参考电平）电压，观察信号的时域和频域特征，判断其是否与输入声信号吻合；</li>
+                    <li>观察信号的幅值，与“模拟电路实验（一）：示波器的使用与简易传声器电路”对比，验证放大器的有效性。</li>
+                </ol>
+            </div>
+        </div>
+
+        <DIV id=mw-navigation>
+            <H2>Navigation menu</H2>
+            <DIV id=mw-head>
+
+                <DIV id=left-navigation>
+                    <DIV id=p-namespaces class=vectorTabs role=navigation aria-labelledby=p-namespaces-label>
+                        <DIV class=menu>
+                            <UL></UL>
+                        </DIV>
+                    </DIV>
+                </DIV>
+
+                <DIV id=p-cactions class="vectorMenu emptyPortlet" role=navigation aria-labelledby=p-cactions-label>
+                    <DIV class=menu>
+                        <UL></UL>
+                    </DIV>
+                </DIV>
+
+            </DIV>
+        </DIV>
+        
+        
+        
+        <DIV id=mw-panel>
+            <DIV id=p-lang class=portal role=navigation aria-labelledby=p-lang-label>
+                <DIV id=p-logo role=banner></DIV>
+                <DIV id=p-navigation class=portal role=navigation aria-labelledby=p-navigation-label>
+                    <H3 id=p-navigation-label>Navigation</H3>
+                    <DIV class=body>
+                    <UL>
+                        <li><a href="https://skai-wang.github.io/circuit&electronics">电路电子</a></li>
+                    </UL>
+                    </DIV>
+                </DIV>
+        
+                <DIV id=p-lang class=portal role=navigation aria-labelledby=p-lang-label>
+            </DIV>
+        </DIV>
+    </div>
+
+    <DIV id=footer role=contentinfo>
+        <UL id=footer-info>
+            <LI id=footer-info-lastmod> </LI>
+        </UL>
+    </DIV>
+</body>
+</html>

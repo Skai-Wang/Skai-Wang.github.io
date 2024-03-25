@@ -1,0 +1,28 @@
+body {
+	text-align: justify;
+	background-color: #EFF8FB; /*url(background.jpg);*/
+	color: #111;
+	font-family: "Times New Roman", Times, serif;
+	font-size: 1em;
+	width: 90%;
+}
+
+#header .picture1 {
+	float: left;
+		width: 18%;
+	padding: 0px 0px 0 0px;
+}
+
+
+#header .picture {
+	float: left;
+	padding: 70px 0 20px 10px;
+	
+}
+
+#header .pu_logo {
+	float: center;
+	border: 0;
+	padding-top: 0px;
+	padding-right: 20%;
+}

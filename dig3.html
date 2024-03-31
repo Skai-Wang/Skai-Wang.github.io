@@ -12,29 +12,35 @@
         <DIV id=mw-head-base class=noprint></DIV>
         <div id="content" class="mw-body" role="main">
             <div id="main">
-                <h2>模拟电路实验（二） 共射放大电路与差分放大电路</h2>
+                <h2>数字电路实验（三） FPGA应用实例之梳状滤波器</h2>
                 <h3>实验目的</h3>
                 <ol>
-                    <li>理解差模信号与共模信号，学习共射放大电路和差分放大电路的原理；</li>
-                    <li>结合课上所学内容，了解三极管和MOS管的区别，学会看三极管的输出特性曲线，理解“工作点，小扰动”并掌握放大倍数的计算方法；</li>
-                    <li>搭建放大电路并探索共射负载电阻对放大电路的影响；</li>
+                    <li>了解Sigma-delta调制器的相关知识，结合课上所学知识对模拟信号和数字信号有进一步理解；</li>
+                    <li>利用FPGA实现梳状滤波器，通过观察仿真结果理解梳状滤波器的原理；</li>
+                    <li>实例化FFT（快速傅里叶变换） IP核，对频域信号处理有所了解。</li>
                 </ol>
                 <h3>预习材料</h3>
                 <ol>
-                    <li>三极管静态工作点的分析方法：<a href="https://zhuanlan.zhihu.com/p/106878109">三极管放大区静态工作点的设置 - 知乎 (zhihu.com)</a></li>
+                    <li>ADC（模数转换器）的概念：<a href="https://zhuanlan.zhihu.com/p/258434654">单片机外围模块漫谈之一，图解说明什么是Flash, SAR, Sigma-Delta型ADC - 知乎 (zhihu.com)</a></li>
+                    <li>梳状滤波器结构设计：<a href="https://bestfpga.blog.csdn.net/article/details/80881484">FPGA数字信号处理（十六）单级CIC滤波器Verilog设计-CSDN博客</a>
+                        <a href="https://blog.csdn.net/FPGADesigner/article/details/80885415">FPGA数字信号处理（十六）单级CIC滤波器Verilog设计-CSDN博客</a></li>
                 </ol>
                 <h3>实验器材</h3>
-                面包板1个，示波器1台，万用表1个，信号发声器一台，传声器1个，USB线缆1条，USB母口1个，杜邦线若干，多种规格的电阻若干，多种规格的电容若干，8050三极管2个
+                Basys 2开发板，笔记本电脑1台（提前安装Xilinx ISE 14.7）。
                 <h3>实验步骤</h3>
                 <ol>
-                    <li>查阅8050三极管特征曲线，能够根据传声器工作参数计算适宜的偏置电流；</li>
-                    <li>参考电路图，在面包板上搭建传声器共射放大电路；搭建完成后尝试改变负载电阻，探究其对放大倍数影响；<br>
-                        <figure max-width="800">
-                            <img src="ana2.png" class="fans" width="800">
-                            <figcaption>共射放大电路图</figcaption>
+                    <li>建立顶层top模块并实例化Integrated,Decimate,Comb三个模块；<br>
+                        <figure>
+                            <img src="dig3_1.png" class="fans" width="500">
+                            <figcaption>各模块间关系</figcaption>
                         </figure>
                     </li>
-                    <li>参考“模拟电路实验（二）：共射放大电路与差分放大电路”，在面包板上搭建传声器差分放大电路（可选）。</li>
+                    <li>用滤波器模块处理信号。<br>
+                        <figure>
+                            <img src="dig3_3.png" class="fans" width="500">
+                            <figcaption>ModelSim仿真软件中滤波前后信号波形</figcaption>
+                        </figure>
+                    </li>
                 </ol>
             </div>
         </div>
@@ -59,6 +65,8 @@
 
             </DIV>
         </DIV>
+        
+        
         
         <DIV id=mw-panel>
             <DIV id=p-lang class=portal role=navigation aria-labelledby=p-lang-label>

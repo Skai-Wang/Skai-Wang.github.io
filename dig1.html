@@ -12,29 +12,24 @@
         <DIV id=mw-head-base class=noprint></DIV>
         <div id="content" class="mw-body" role="main">
             <div id="main">
-                <h2>模拟电路实验（二） 共射放大电路与差分放大电路</h2>
+                <h2>数字电路实验（一） FPGA基础入门</h2>
                 <h3>实验目的</h3>
                 <ol>
-                    <li>理解差模信号与共模信号，学习共射放大电路和差分放大电路的原理；</li>
-                    <li>结合课上所学内容，了解三极管和MOS管的区别，学会看三极管的输出特性曲线，理解“工作点，小扰动”并掌握放大倍数的计算方法；</li>
-                    <li>搭建放大电路并探索共射负载电阻对放大电路的影响；</li>
+                    <li>了解FPGA (Field Programmable Gate Array)基础知识，学习Verilog语言的基本语法，区分时序逻辑和组合逻辑，并结合课上所学内容实现简单的门电路；</li>
+                    <li>掌握FPGA编程与烧录的基本流程，在Basys2 开发板上实现流水灯，在这一过程中对时钟、分频、状态机等概念有所了解；</li>
+                    <li>根据所学知识修改代码，利用分频实现七段数码管显示数字的功能。</li>
                 </ol>
                 <h3>预习材料</h3>
                 <ol>
-                    <li>三极管静态工作点的分析方法：<a href="https://zhuanlan.zhihu.com/p/106878109">三极管放大区静态工作点的设置 - 知乎 (zhihu.com)</a></li>
+                    <li>编程题库，<a href="https://hdlbits.01xz.net/wiki/Problem_sets">https://hdlbits.01xz.net/wiki/Problem_sets</a></li>
                 </ol>
                 <h3>实验器材</h3>
-                面包板1个，示波器1台，万用表1个，信号发声器一台，传声器1个，USB线缆1条，USB母口1个，杜邦线若干，多种规格的电阻若干，多种规格的电容若干，8050三极管2个
+                Basys 2开发板，笔记本电脑1台（提前安装Xilinx ISE 14.7）。
                 <h3>实验步骤</h3>
                 <ol>
-                    <li>查阅8050三极管特征曲线，能够根据传声器工作参数计算适宜的偏置电流；</li>
-                    <li>参考电路图，在面包板上搭建传声器共射放大电路；搭建完成后尝试改变负载电阻，探究其对放大倍数影响；<br>
-                        <figure max-width="800">
-                            <img src="ana2.png" class="fans" width="800">
-                            <figcaption>共射放大电路图</figcaption>
-                        </figure>
-                    </li>
-                    <li>参考“模拟电路实验（二）：共射放大电路与差分放大电路”，在面包板上搭建传声器差分放大电路（可选）。</li>
+                    <li>点亮开发板上的板载LED灯；</li>
+                    <li>在开发板上实现流水灯；</li>
+                    <li>利用分频实现数码管显示数字的功能（不作要求，可自己研究）。</li>
                 </ol>
             </div>
         </div>
@@ -59,6 +54,8 @@
 
             </DIV>
         </DIV>
+        
+        
         
         <DIV id=mw-panel>
             <DIV id=p-lang class=portal role=navigation aria-labelledby=p-lang-label>

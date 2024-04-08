@@ -5,6 +5,13 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="load.css">
     <link rel="stylesheet" href="global.css">
+    <style>
+        ul.nomarker {
+          list-style: none;
+          margin: auto;
+          padding: auto;
+        }
+    </style>
 </head>
 <body>
     <div id="header">
@@ -24,27 +31,31 @@
                     <li>AD 623运算放大器的技术文档：<a href="https://www.analog.com/media/en/technical-documentation/data-sheets/ad623.pdf">AD623. Data Sheet</a></li>
                 </ol>
                 <h3>实验器材</h3>
-                面包板1个，示波器1台，万用表1个，传声器1个，USB线缆 1 条，USB母口1个，AD 623运算放大器1个，3.5 mm传声器线缆1条，3.5 mm传声器母口1个，实验用台式电脑1台，杜邦线若干，多种规格的电阻若干，多种规格的电容若干，电脑1台（需自行准备）。
+                面包板1个，示波器1台，万用表1个，传声器1个，USB线缆 1 条，USB母口1个，AD623运算放大器1个，3.5 mm传声器线缆1条，3.5 mm传声器母口1个，实验用台式电脑1台，杜邦线若干，多种规格的电阻若干，多种规格的电容若干，电脑1台（需自行准备）。
                 <h3>实验步骤</h3>
                 <ol>
-                    <li>阅读AD 623运算放大器的技术文档，掌握放大器所有引脚的定义及功能；<br>
+                    <li>阅读AD623运算放大器的<a href="/download_file/ad623doc.pdf" download>技术文档</a>，掌握放大器所有引脚的定义及功能；<br>
                         <figure>
                             <img src="/images/ana3_1.png" class="fans" width="500">
-                            <figcaption>AD 623运算放大器引脚定义图</figcaption>
+                            <figcaption>AD623运算放大器引脚定义图</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="/images/ana3_2.png" class="fans" width="1000">
+                            <figcaption>AD623运算放大器引脚功能描述</figcaption>
                         </figure>
                     </li>
                     <li>参考“模拟电路实验（一）：示波器的使用与简易传声器电路”，在面包板上搭建简易传声器电路；</li>
                     <li>参考AD 623运算放大器的技术文档，将简易传声器器电路的测量点接入运算放大器，并配置合适的增益电阻、电源电压和参考电平，对简易传声器电路输出的信号进行放大；<br>
                         <figure>
-                            <img src="/images/ana3_2.png" class="fans" width="1000">
-                            <figcaption>AD 623运算放大器引脚功能描述</figcaption>
+                            <img src="/images/ana3_3.png" class="fans" width="1000">
+                            <figcaption>使用AD623运算放大器的传声器电路图</figcaption>
                         </figure>
                     </li>
                     <li>借助手机APP生成单频声，将手机扬声器开孔靠近传声器元件，然后使用示波器测试放大器输出引脚的对地（或其他参考电平）电压，观察信号的时域和频域特征，判断其是否与输入声信号吻合；</li>
                     <li>观察信号的幅值，与“模拟电路实验（一）：示波器的使用与简易传声器电路”对比，验证放大器的有效性。</li>
                 </ol>
 
-                <ul>
+                <ul class="nomarker">
                     <li><a href="https://skai-wang.github.io/ana1">模拟电路实验（一）</a></li>
                     <li><a href="https://skai-wang.github.io/ana2">模拟电路实验（二）</a></li>
                     <li><a href="https://skai-wang.github.io/ana3">模拟电路实验（三）</a></li>

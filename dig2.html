@@ -32,7 +32,7 @@
                     <li>Xilinx ISE软件教程：<a href="https://blog.csdn.net/yang_jiangning/article/details/123546078">ISE14.7手把手使用教程：建立工程、仿真、下载bit流、程序固化、以及一些常见的坑_米多奇米饼的博客-CSDN博客</a></li>
                 </ol>
                 <h3>实验器材</h3>
-                Basys 2开发板，笔记本电脑1台（提前安装Xilinx ISE 14.7）。
+                Basys 2开发板，笔记本电脑1台（提前安装Xilinx ISE 14.7），<a href="/download_file/dig2.zip">附件</a>。
                 <h3>实验步骤</h3>
                 <ol>
                     <li>建立并调用RAM IP核，修改Memory Type为 Single Port RAM，修改位宽为8，深度为32，模式为Write First；</li>
@@ -43,7 +43,7 @@
                             <figcaption>仿真结果中，读数据比写数据晚一个时钟，这与之前的设置有关，可以尝试改为Read First，再仿真一次并观察结果</figcaption>
                         </figure>
                     </li>
-                    <li>建立ROM IP核，修改Memory Type为 Single Port ROM，修改位宽为8，深度为4096，Memory Initialization选择从coe文件（课前提供，存储需要输出的图像）加载（路径不能含有中文）；</li>
+                    <li>建立ROM IP核，修改Memory Type为 Single Port ROM，修改位宽为8，深度为4096，Memory Initialization选择从附件中coe文件加载（路径不能含有中文）；</li>
                     <li>将电脑连接到FPGA开发板，导入顶层文件、约束文件，实例化IP核；</li>
                     <li>将开发板的视频输出接口与显示器相连，在屏幕上输出箭头图案。<br>
                         <figure>
